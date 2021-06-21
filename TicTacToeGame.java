@@ -21,12 +21,14 @@ public class TicTacToeGame
 		public static char player = ' ';
 		public static char computer = ' ';
 		
-		public static char chooseInput(Scanner scan) {
+		public static char chooseInput(Scanner scan)
+		{
 			System.out.println(" Enter the input value you want : ");
 			return scan.next().toUpperCase().charAt(0);
 
 		}
 		
+		//UC3
 		public static void showBoard(char[] board) 
 		{
 			System.out.println(board[1] +  " | " +board[2] + " | " +board[3] );
