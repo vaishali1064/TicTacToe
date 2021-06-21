@@ -27,6 +27,15 @@ public class TicTacToeGame
 
 		}
 		
+		public static void showBoard(char[] board) 
+		{
+			System.out.println(board[1] +  " | " +board[2] + " | " +board[3] );
+			System.out.println("---------- ");
+			System.out.println(board[4] +  " | " +board[5] + " | " +board[6] );
+			System.out.println("---------- ");
+			System.out.println(board[7] +  " | " +board[8] + " | " +board[9] );
+		}
+		
 		public static void main(String[] args) 
 		{	//UC1
 			TicTacToeGame obj = new TicTacToeGame();
@@ -39,6 +48,8 @@ public class TicTacToeGame
 			char player = chooseInput(scan);
 			char computer = (player == 'X') ? 'O' : 'X';
 			System.out.println(player + " is your choosen value " );
-
+			
+			//UC3
+			showBoard(board);
 		}
 }
